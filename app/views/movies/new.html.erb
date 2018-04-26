@@ -1,0 +1,29 @@
+<br><br><br>
+<div class="container">
+  <%= form_tag("/movies/create", :method=>"post") do %>
+<legend>Crear nueva pelicula</legend>
+  <div class="form-group row">
+    <div class="col-xs-12 col-sm-4">
+      <label for="title">Nombre de la pelicula</label>
+      <input type="text" name="title" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-xs-12 col-sm-2">
+      <label for="year">Ano de la pelicula</label>
+      <input type="number" name="year" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-xs-12 col-sm-5">
+      <label for="description">Sinopsis de la pelicula</label>
+      <textarea name="description" class="form-control" style="resize: none;"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12" align="right">
+      <button type="submit" class="btn btn-nextia-primary btn-block">Crear</button>
+    </div>
+  </div>
+  <%end%>
+</div>

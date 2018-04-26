@@ -1,0 +1,22 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$rojoprimario: #D81F26;
+.change:hover{
+  background-color: $rojoprimario !important;
+  cursor: pointer !important;
+  color: white !important;
+}
+
+.btn-nextia-primary{
+  background-color: $rojoprimario;
+  color: white;
+  border-radius: 0 !important;
+}
+
+.btn-nextia-primary:hover{
+  color: $rojoprimario !important;
+  background-color: transparent;
+  border:1px solid $rojoprimario;
+
+}
