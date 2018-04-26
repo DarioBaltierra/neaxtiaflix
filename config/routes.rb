@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'directores' => 'directors#index'
+
+  get 'directors/new'
+
   get 'peliculas' => 'movies#index'
 
   get 'nueva_pelicula' => 'movies#new'

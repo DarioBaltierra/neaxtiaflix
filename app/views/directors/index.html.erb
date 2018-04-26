@@ -1,0 +1,42 @@
+<div class="container">
+  <br>
+  <div class="row">
+    <div class="col-xs-12">
+      <center><img class="img-responsive" src="/lognetflix.png" width=450px"" alt=""></center>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 pull-right" align="right">
+      <button type="button" name="button" class="btn btn-lg btn-nextia-primary" onclick="goTo('/nueva_pelicula')">Crear nuevo</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%@directors.each do |director| %>
+          <tr class="change">
+            <td ><%=director.id %></td>
+            <td><%=director.name %></td>
+            <td><%=director.last_name %></td>
+          </tr>
+          <%end%>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function goTo(link){
+    window.location.href = link;
+  }
+</script>
