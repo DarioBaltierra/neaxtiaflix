@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   get 'directores' => 'directors#index'
 
-  get 'directors/new'
+  get 'nuevo_director' => 'directors#new'
+
+  post 'directors/create' => 'directors#create'
 
   get 'peliculas' => 'movies#index'
 
