@@ -16,8 +16,14 @@
   </div>
   <div class="row">
     <div class="col-xs-12" align="right">
-      <button type="submit" class="btn btn-nextia-primary btn-block">Crear</button>
+      <button type="submit" class="btn btn-nextia-primary btn-block" onclick="goTo('/nueva_pelicula')">Crear</button>
     </div>
   </div>
   <%end%>
 </div>
+
+<script type="text/javascript">
+    function goTo (link){
+      window.location.href = link;
+    }
+</script>
